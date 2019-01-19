@@ -1,0 +1,328 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Sadhana Kalyana Raman">
+    <meta name="keywords" content="profile, fun, IT, Technology, Sadhana, Raman, Kalyanaraman, Kalyana Raman, website, resume">
+    <meta name="description" content="My journey with technology!" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>
+        Skillset
+    </title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/04A5BB71-4F54-4747-B996-2BF0BC89DEEA/main.js" charset="UTF-8"></script>-->
+    <!--<script type="text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>-->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            //$('#scrollspy-example').scrollspy({ target: '#list-example' })
+
+            $('#accordion').accordion(
+                {
+                    collapsible: true,
+                    heightStyle: "content",
+                    icons: { "header": "ui-icon-circle-plus", "activeHeader": "ui-icon-circle-minus" },
+                    beforeActivate: function (event, ui) {
+                        // The accordion believes a panel is being opened
+                        if (ui.newHeader[0]) {
+                            var currHeader = ui.newHeader;
+                            var currContent = currHeader.next('.ui-accordion-content');
+                            // The accordion believes a panel is being closed
+                        } else {
+                            var currHeader = ui.oldHeader;
+                            var currContent = currHeader.next('.ui-accordion-content');
+                        }
+                        // Since we've changed the default behavior, this detects the actual status
+                        var isPanelSelected = currHeader.attr('aria-selected') == 'true';
+
+                        // Toggle the panel's header
+                        currHeader.toggleClass('ui-corner-all', isPanelSelected).toggleClass('accordion-header-active ui-state-active ui-corner-top', !isPanelSelected).attr('aria-selected', ((!isPanelSelected).toString()));
+
+                        // Toggle the panel's icon
+                        currHeader.children('.ui-icon').toggleClass('ui-icon-circle-plus', isPanelSelected).toggleClass('ui-icon-circle-minus', !isPanelSelected);
+
+                        // Toggle the panel's content
+                        currContent.toggleClass('accordion-content-active', !isPanelSelected);
+                        if (isPanelSelected) { currContent.slideUp(); } else { currContent.slideDown(); }
+
+                        return false; // Cancel the default action
+                    }
+
+                });
+            $('.list').hide();
+            $('.toggle').on('click',
+                function () {
+                    $(this).html($(this).html() == '<span class="glyphicon glyphicon-tasks"></span>Skill Graph' ? '<span class="glyphicon glyphicon-file"></span>Skill List' : '<span class="glyphicon glyphicon-tasks"></span>Skill Graph');
+                    $('.bar2, .list').toggle(200);
+                    return false;
+                }
+            );
+
+        });
+    </script>
+
+</head>
+                <body>
+                    <div class="navbar navbar-default navbar-fixed-top">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#theNav"
+                                    aria-expanded="false">
+                                    <span class="sr-only">Toggle Navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <a class="navbar-brand" href="Default.aspx#Feedback">Contact Me</a>
+                            </div>
+
+                            <div class="collapse navbar-collapse" id="theNav">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="Default.aspx">About</a></li>
+                                    <li class="active"><a href="Skill.html">Skillset</a></li>
+                                    <li><a href="about.html">The Site FAQ</a></li>
+                                    <li><a href="more.html">More</a></li>
+                                    <!--<li>
+        <a href="videos.html" class="dropdown-toggle" data-toggle="dropdown" role="button"
+            aria-haspopup="true" aria-expanded="false">More<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <li><a href="videos.html#2017">2017</a></li>
+            <li><a href="videos.html#2016">2016</a></li>
+        </ul>
+    </li>-->
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="jumbotron text-center">
+                            </br>
+                            </br>
+                            <div class="quote strokeme">Sadhana Kalyana Raman</div>
+                            </br>
+                            <h2>Fullstack .Net developer</h2>
+                            </br>
+                            <span style="font-size: 3em;">
+                                <a href="https://www.linkedin.com/in/sadhana-kalyanaraman-91a55a61/" target="_blank">  <i class="fab fa-linkedin"></i></a>
+                                <a href="https://www.linkedin.com/in/sadhana-kalyanaraman-91a55a61/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                            </span>
+                            </br>
+                        </div>
+                        <!--<div id="list-example" class="list-group">
+        <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-2">Item2</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+        <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+    </div>
+    <div id="scrollspy-example" data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+        <h4 id="list-item-1">Item 1</h4>
+        <p>iquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.</p>
+        <h4 id="list-item-2">Item 2</h4>
+        <p>iquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.</p>
+        <h4 id="list-item-3">Item 3</h4>
+        <p>iquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.</p>
+        <h4 id="list-item-4">Item 4</h4>
+        <p>iquip culpa aute tempor reprehenderit. Deserunt tempor mollit elit ex pariatur dolore velit fugiat mollit culpa irure ullamco est ex ullamco excepteur.</p>
+    </div>-->
+                        <div class="descskill">
+                            <span>In most Developer's lifespans, not all Tech is created equally. Here's my level of experience with different techs I've had a chance to work with.</span>
+                            </br></br>
+                            <div id="accordion" class="green">
+                                <h2><a href='#'>Skillset</a> </h2>
+                                <div id="Skill">
+
+                                    <div id="Div1">
+
+                                        <div class="bar2">
+                                            <span>Over the years I have had a chance to work across the technology stack (albeit primarily backend) and below gives a brief summary of my experience levels.</span>
+                                            <h3><u>Experience Levels</u></h3>
+                                            </br>
+                                           
+                                            <div class="font progress" style="height:30px">
+                                                <div class="progress-bar progress-bar-warning" role="progressbar" style="color:black; font-weight:bold; background-color:Azure !important;width:80%;height:30px;border:solid;border-width: thin">
+                                                    <span style="font-size:16px;" class="percent">C#</span>
+                                                </div>
+                                                <div class="progress-bar progress-bar-danger" role="progressbar" style="width:20%;height:30px;font-weight:bold;background-color:#444040 !important;">
+                                                    <span style="font-size:16px;" class="percent">80%</span>
+                                                </div>
+                                            </div>
+                                            <div class="font progress" style="height:30px">
+                                                <div class="progress-bar progress-bar-warning" role="progressbar" style="color:black; font-weight:bold; background-color:Azure !important;width:60%;height:30px;border:solid;border-width: thin">
+                                                    <span style="font-size:16px;" class="percent">JS & Jquery</span>
+                                                </div>
+                                                <div class="progress-bar progress-bar-danger" role="progressbar" style="width:40%;height:30px;font-weight:bold;background-color:#444040 !important;">
+                                                    <span style="font-size:16px;" class="percent">60%</span>
+                                                </div>
+                                            </div>
+                                            <div class="font progress" style="height:30px">
+                                                <div class="progress-bar progress-bar-warning" role="progressbar" style="color:black; font-weight:bold; background-color:Azure !important;width:90%;height:30px;border:solid;border-width: thin">
+                                                    <span style="font-size:16px;" class="percent">T-SQL</span>
+                                                </div>
+                                                <div class="progress-bar progress-bar-danger" role="progressbar" style="width:10%;height:30px;font-weight:bold;background-color:#444040 !important;">
+                                                    <span style="font-size:16px;" class="percent">90%</span>
+                                                </div>
+                                            </div>
+                                            <div class="font progress" style="height:30px">
+                                                <div class="progress-bar progress-bar-warning" role="progressbar" style="color:black; font-weight:bold; background-color:Azure !important;width:70%;height:30px;border:solid;border-width: thin">
+                                                    <span style="font-size:16px;" class="percent">HTML&CSS</span>
+                                                </div>
+                                                <div class="progress-bar progress-bar-danger" role="progressbar" style="width:30%;height:30px;font-weight:bold;background-color:#444040 !important;">
+                                                    <span style="font-size:16px;" class="percent">70%</span>
+                                                </div>
+                                            </div>
+                                            <div class="font progress" style="height:30px">
+                                                <div class="progress-bar progress-bar-warning" role="progressbar" style="color:black; font-weight:bold; background-color:Azure !important;width:70%;height:30px;border:solid;border-width: thin">
+                                                    <span style="font-size:16px;" class="percent">WCF & Web APIs</span>
+                                                </div>
+                                                <div class="progress-bar progress-bar-danger" role="progressbar" style="width:30%;height:30px;font-weight:bold;background-color:#444040 !important;">
+                                                    <span style="font-size:16px;" class="percent">70%</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="list">
+                                            <span>If you'd rather prefer a list :).</span>
+
+                                            <h3><u>Skill list</u></h3>
+
+
+                                            <ul>
+                                                <li><u>Hardware / Platforms</u> - Windows 98/XP/2000/vista/7/10.</li>
+                                                <li><u>Programming</u> - C/C++, C#.NET, ADO.NET, ASP.NET , Entity Framework, SOAP, WSDL and Restful APIs.</li>
+                                                <li><u>Databases</u> - MS-Access, SQL Server 2005, 2008 R2, 2012. </li>
+                                                <li><u>Warehousing and Reporting Technologies</u> – ETL framework, SSIS, SSAS.</li>
+                                                <li><u>Scripting Languages</u> - JavaScript, XML, HTML 5, CSS 3, Bootstrap 4.0, XAML SilverLight 4.0 (WPF).</li>
+                                                <li><u>Web Services</u> – WCF, Web API</li>
+                                                <li><u>Development Models</u> - MVC 5, MVVM and Three Tier Architecture </li>
+                                                <li><u>Version Control Systems</u> - Team Foundation Server (TFS) ,Tortoise SVN, VSTS, GIT.</li>
+                                                <li><u>Tools</u> – UML (Rational Rose), Visual Cron, SOAP UI</li>
+                                                <li><u>Application Servers</u> – IIS</li>
+                                                <li><u>Code Analysis</u> – FxCop and StyleCop</li>
+                                                <li><u>SDLCs</u> – Agile Methodologies, Waterfall, RAD and Spiral.</li>
+                                                <li><u>MS Office</u> - Microsoft Word, Power point, and MS Excel (Pivot Tables, Macros, Formulas, Import/Export operations)</li>
+                                                <li><u>Atlassian Suits</u> – JIRA and Confluence</li>
+                                                <li><u>CI and CD</u> – Octopus and Team CIty, Azure.</li>
+                                                <li><u>Domain Experience</u> - Manufacturing, Retail and Insurance.</li>
+                                            </ul>
+
+                                        </div>
+                                        <center>
+                                            <a type="button" id="toggle" class="auto-style2 btn btn-warning toggle bot" aria-label="Left Align" href="javascript:void(0);" role="button">
+                                                <span class="glyphicon glyphicon-file"></span>
+                                                Skill List
+                                            </a>
+                                        </center>
+
+
+                                    </div>
+
+                                </div>
+                                </br></br>
+                                <h2><a href='#'>Experience</a> </h2>
+                                <div id="Experience">
+                                    <div id="exCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                                        <!-- Indicators -->
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#exCarousel" data-slide-to="0" class="active"></li>
+                                            <li data-target="#exCarousel" data-slide-to="1"></li>
+                                        </ol>
+
+                                        <div class="carousel-inner">
+                                            <div class="item active">
+                                                <a href="https://www.cognizant.com/" target="_blank"> <img src="cognizant.jpg" class="img-responsive center-block" alt="Cognizant"></a>
+                                                </br></br>
+                                                <div id="rotateone">
+                                                    <p>
+                                                        Cognizant is a MNC that provides IT services across digital, technology and consulting.
+                                                    </p>
+                                                    </br>
+                                                    <p>
+                                                        During my time with Cognizant I had the opportunity to work across a range of technologies including Database design, normalisations, WCF, Three Tier and MVC. I was part of projects with clients BASF, DHL and in the development of several of Cognizant's own Websites.
+                                                    </p>
+                                                    </br>
+                                                    </br>
+                                                    </br>
+                                                </div>
+                                            </div>
+
+                                            <div class="item">
+                                                <a href="http://www.greenstone.com.au/" target="_blank"> <img src="greenstone.jpg" class="img-responsive center-block" alt="Greenstone"></a>
+                                                </br></br>
+                                                <div id="rotatetwo">
+                                                    <p>
+                                                        Greenstone specialises in the design, marketing and distribution of personal insurance offering a range of products and brands.
+                                                    </p>
+                                                    </br>
+                                                    <p>
+                                                        I work as a Developer as part of the in-house IT team across a range of technologies and applications, inlcuding but not limited to the CRM application used by the Call-Center which is Windows based and several Web applications that it communicates with.
+                                                    </p>
+                                                    </br>
+                                                    </br>
+                                                    </br>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a id="leftarrow" class="left carousel-control" href="#exCarousel" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a id="rightarrow" class="right carousel-control" href="#exCarousel" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+
+                                    </div>
+                                </div>
+                                </br></br>
+                                <h2><a href='#'>Education</a> </h2>
+                                <div id="More">
+                                    <h3>
+                                        <u>Highest Academic Qualification:</u>
+                                    </h3>
+                                    <ul>
+                                        <li><b>Bachelor of Technology</b> ‐ Computer Science and Engineering, Pondicherry University, India.</li>
+                                    </ul>
+
+                                    <h3>
+                                        <u>Other Qualifications:</u>
+                                    </h3>
+                                    <ul>
+                                        <li>Diploma in <b>Computer Applications</b> from CSC (Computer Software College).</li>
+                                        <li>Web designing using <b>HTML</b> by IBM.</li>
+                                        <li>Level 0 Cognizant Certification on Manufacturing.</li>
+                                        <li>Overall Score of 8.5 in <b>IELTS General</b> (International English Language Testing System).</li>
+                                        <li>Member of Australian Computer Society <b>(ACS)</b>.</li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        </br>
+                        <div class="madeby visible-lg">
+                            <em>© Sadhana Kalyana Raman</em>
+                        </div>
+                        <div class="madebys hidden-lg">
+                            <em>© Sadhana Kalyana Raman</em>
+                        </div>
+                        </br>
+                    </div>
+
+</body>
+</html >
